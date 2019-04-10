@@ -15,18 +15,18 @@ export class KeyboardListenerDirective  {
   @HostListener('keydown.arrowdown') arrowDown() {
     event.preventDefault();
     this.removeHighlight();
-    this.counter < document.getElementsByClassName('app-kb-listner').length - 1 ?  this.counter++ : this.counter = 0;
+    this.counter < document.getElementsByClassName('app-kb-listener').length - 1 ?  this.counter++ : this.counter = 0;
     this.addHighlight();
   }
   @HostListener('keydown.arrowup') arrowUp() {
     event.preventDefault();
     this.removeHighlight();
-    this.counter > 0 ? this.counter-- :  this.counter = document.getElementsByClassName('app-kb-listner').length - 1;
+    this.counter > 0 ? this.counter-- :  this.counter = document.getElementsByClassName('app-kb-listener').length - 1;
     this.addHighlight();
   }
   @HostListener('keydown.enter') keyEnter() {
     event.preventDefault();
-    (document.getElementsByClassName('app-kb-listner')[this.counter] as HTMLInputElement).click();
+    (document.getElementsByClassName('app-kb-listener')[this.counter] as HTMLInputElement).click();
     (document.activeElement as HTMLInputElement).blur();
     this.counter = -1;
   }
@@ -41,13 +41,13 @@ export class KeyboardListenerDirective  {
     this.onSelect.emit(false);
   }
   removeHighlight() {
-    const el = (document.getElementsByClassName('app-kb-listner')[this.counter] as HTMLInputElement);
+    const el = (document.getElementsByClassName('app-kb-listener')[this.counter] as HTMLInputElement);
     if (el) {
       el.classList.remove('app-item-highlighted');
     }
   }
   addHighlight() {
-    const el = (document.getElementsByClassName('app-kb-listner')[this.counter] as HTMLInputElement);
+    const el = (document.getElementsByClassName('app-kb-listener')[this.counter] as HTMLInputElement);
     if (el) {
       el.classList.add('app-item-highlighted');
     }

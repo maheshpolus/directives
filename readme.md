@@ -1,7 +1,7 @@
 
 # keyBoard Event listner
 
-It's an angular component for generic usage.
+It's an angular directive for generic usage.
 
 ## Installation
 
