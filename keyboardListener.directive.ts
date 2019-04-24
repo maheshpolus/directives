@@ -38,7 +38,7 @@ export class KeyboardListenerDirective  {
   }
   cancelSearch() {
     this.counter = -1;
-    this.onSelect.emit(false);
+    this.onEscape.emit(false);
   }
   removeHighlight() {
     const el = (document.getElementsByClassName('app-kb-listener')[this.counter] as HTMLInputElement);
