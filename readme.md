@@ -33,7 +33,7 @@ export class AppModule { }
     <div  appKeyboardListener (onEscape)="yourFunction">
         <input id="MytextField" type="text" placeholder="enter tet"  [(ngModel)]="result?.proposal.homeUnitName"/>
         <ul class="sb-results-dropdown-menu text-left">
-            <li  class= "app-kb-listner" *ngFor="let result of leadUnits" (click)="myFunction(result);">
+            <li  class= "app-kb-listener" *ngFor="let result of leadUnits" (click)="myFunction(result);">
             <span [innerHTML]="result.unitName"></span></li>
         </ul>
     </div>
@@ -46,7 +46,7 @@ Name  | Description | Example |
 
 ## Other requirements
 
-You should add 'app-kb-listner' to li class to enable key event listener (uses 'getElementsByClassName' to collect li list)
+You should add 'app-kb-listener' to li class to enable key event listener (uses 'getElementsByClassName' to collect li list)
 can be used in other html tags ul li is used as an example
 
 Adds 'app-item-highlighted' to the current selected li. Add this class to your stylesheet.
