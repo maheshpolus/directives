@@ -1,5 +1,5 @@
 
-# keyBoard Event listner
+# Auto grow for textarea
 
 It's an angular directive for generic usage.Only to be used with textarea, since its uses focus and oniput as event listeners.
 
