@@ -1,5 +1,5 @@
 
-#File drop listner
+# File drop
 
 It's an angular directive for generic usage.
 
@@ -10,7 +10,7 @@ Download the directive and add it into your module.
 ## Usage
 
 ```TypeScript
-import { DragNdropDirective } from './directives/keyboardListener.directive';
+import { DragNdropDirective } from './directives/drag-ndrop.directive';
 
 @NgModule({
   declarations: [
